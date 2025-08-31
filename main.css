@@ -20,6 +20,7 @@ body {
 /* use  > combinator  */
 .main-header>div {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand {
@@ -37,6 +38,8 @@ body {
     element on the same line */
     width: calc(100% - 74px);
     text-align: right;
+    vertical-align: middle;
+
 }
 
 .main__itmes {
