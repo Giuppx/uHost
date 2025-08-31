@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.main-header {
+    width: 100%;
+    padding: 8px 16px;
+    background: #2ddf5c;
+}
+
+/* use  > combinator  */
+.main-header>div {
+    display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+}
+
+.main__item {
+    display: inline-block;
+}
