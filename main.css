@@ -1,3 +1,8 @@
+* {
+    /* use border-box mode for calculating element size (including padding and border) */
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -15,6 +20,17 @@ body {
 
 .main-nav {
     display: inline-block;
+    /* Subtract the empty space and the width of the div element 
+    from the total width of the nav element to position the nav 
+    element on the same line */
+    width: calc(100% - 54px);
+    text-align: right;
+}
+
+.main__itmes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main__item {
