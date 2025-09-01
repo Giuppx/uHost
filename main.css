@@ -56,12 +56,26 @@ body {
 .main__item>a {
     color: #0e4f1f;
     text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
 }
 
-.main__item>a:hover {
-    color: white;
-}
-
+.main__item>a:hover,
 .main__item>a:active {
     color: white;
+    border-bottom: 1px solid white;
+}
+
+.main__item--cta a {
+    background-color: #ff1b68;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main__item--cta a:hover,
+.main__item--cta a:active {
+    border: none;
+    background-color: white;
+    color: #ff1b68;
 }
