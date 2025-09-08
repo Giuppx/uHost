@@ -14,7 +14,7 @@
     height: 638px;
     padding: 10px;
     /* 43px is the height of header */
-    margin-top: 43px;
+    margin-top: 40px;
 }
 
 #product-overview>h1 {
@@ -23,11 +23,7 @@
     left: 3%;
     color: white;
     font-weight: bold;
-
 }
-
-
-
 
 #plans {
     text-align: center;

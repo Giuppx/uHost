@@ -28,6 +28,11 @@ body {
 }
 
 .main-header__brand {
+    /* change behavior for the icon  */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* text in alt attribute */
     color: #0e4f1f;
     font-weight: bold;
     font-size: 22px;
@@ -35,11 +40,17 @@ body {
 
 }
 
+.main-header__brand img {
+    /* using dimentions of container inline-block */
+    height: 100%;
+    width: 100%;
+}
+
 .main-nav {
     display: inline-block;
     /* Subtract the empty space and the width of the div element 
     from the total width of the nav element to position the nav 
-    element on the same line */
+    element on the same line of div */
     width: calc(100% - 74px);
     text-align: right;
     vertical-align: middle;
