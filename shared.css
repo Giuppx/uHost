@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     background: #2ddf5c;
     z-index: 1;
 }
@@ -35,7 +35,7 @@ body {
     /* text in alt attribute */
     color: #0e4f1f;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.3rem;
     text-decoration: none;
 
 }
@@ -65,14 +65,14 @@ body {
 
 .main__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main__item>a {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    padding: 3px 0;
+    padding: 0.18rem 0;
 }
 
 .main__item>a:hover,
@@ -84,7 +84,7 @@ body {
 .main__item--cta a {
     background-color: #ff1b68;
     color: white;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -97,8 +97,8 @@ body {
 
 .main-footer {
     background-color: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -110,7 +110,7 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
