@@ -1,6 +1,6 @@
 #product-overview {
     position: relative;
-    background: url("freedom.jpg") left 10% bottom 38%/100% 100vh no-repeat border-box;
+    background: url("freedom.jpg") left 10% bottom 30%/100% 100vh no-repeat border-box;
     /* background: order
     background-image: url("freedom.jpg");
      background-position: left 10% bottom 55%;
@@ -11,7 +11,8 @@
     background-attachment: scroll;
     */
     width: 100%;
-    height: 524px;
+    /* height: 524px; */
+    height: 80vh;
     padding: 0.62rem;
     /* 43px is the height of header */
     margin-top: 2.5rem;
