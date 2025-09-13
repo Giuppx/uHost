@@ -10,7 +10,7 @@ main {
     z-index: -1;
     background: url('../images/p-background.jpg') no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
 }
