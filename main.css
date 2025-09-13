@@ -153,3 +153,56 @@
     text-align: center;
     font-size: 1.25rem;
 }
+
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+    text-align: center;
+}
+
+.modal__action {
+    padding: 0.5rem 1rem;
+    color: white;
+    background: #0e4f1f;
+    border: 1px solid #0e4f1f;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.modal__action.modal__action--negative {
+    background: red;
+    border-color: red;
+}
+
+.modal__action:hover,
+.modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+}
