@@ -8,13 +8,11 @@ main {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url('../images/p-background.jpg') no-repeat;
-    background-size: cover;
+    background: url('../images/p-background.jpg') 0 0/cover no-repeat;
     width: 100vw;
     height: 100vh;
 
 }
-
 
 .pakage {
     position: relative;
