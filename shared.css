@@ -38,6 +38,27 @@ body {
     vertical-align: middle;
 }
 
+.toggle-button {
+    /* display: none; */
+    width: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+}
+
+.toggle-button__bar {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    margin: 0.6rem 0;
+    background: black;
+
+}
+
 .main-header__brand {
     /* change behavior for the icon  */
     display: inline-block;
@@ -79,7 +100,8 @@ body {
     margin: 0 1rem;
 }
 
-.main__item>a {
+.main__item>a,
+.mobile-nav__item a {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
@@ -92,7 +114,8 @@ body {
     border-bottom: 3px solid white;
 }
 
-.main__item--cta a {
+.main__item--cta a,
+.mobile-nav__item--cta a {
     background-color: #ff1b68;
     color: white;
     padding: 0.5rem 1rem;
@@ -100,7 +123,9 @@ body {
 }
 
 .main__item--cta a:hover,
-.main__item--cta a:active {
+.main__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
     border: none;
     background-color: white;
     color: #ff1b68;
@@ -132,4 +157,40 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+
+/* mobile nav */
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    z-index: 1003;
+
+}
+
+.mobile-nav__items {
+    list-style: none;
+    width: 90%;
+    height: 100%;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item {
+    margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+    font-size: 1.2rem;
+}
+
+.open {
+    display: block !important;
 }
