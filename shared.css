@@ -27,7 +27,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.2rem;
     background: #2ddf5c;
     z-index: 1;
 }
@@ -36,10 +36,10 @@ body {
 .main-header>div {
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
 }
 
 .toggle-button {
-    /* display: none; */
     width: 3rem;
     padding-top: 0;
     padding-bottom: 0;
@@ -52,9 +52,9 @@ body {
 
 .toggle-button__bar {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 0.2rem;
-    margin: 0.6rem 0;
+    margin: 0.3rem 0;
     background: black;
 
 }
@@ -62,28 +62,28 @@ body {
 .main-header__brand {
     /* change behavior for the icon  */
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: calc(100% - 4rem);
     /* text in alt attribute */
     color: #0e4f1f;
     font-weight: bold;
-    font-size: 1.3rem;
     text-decoration: none;
+    text-align: end;
 
 }
 
 .main-header__brand img {
     /* using dimentions of container inline-block */
     height: 100%;
-    width: 100%;
+    width: 2rem;
+    vertical-align: middle;
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     /* Subtract the empty space and the width of the div element 
     from the total width of the nav element to position the nav 
     element on the same line of div */
-    width: calc(100% - 74px);
+    width: calc(100% - 44px);
     text-align: right;
     vertical-align: middle;
 
@@ -145,8 +145,7 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .main-footer__link a {
@@ -188,9 +187,50 @@ body {
 }
 
 .mobile-nav__item a {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .open {
     display: block !important;
+}
+
+
+@media (min-width: 40rem) {
+
+    /* main nav */
+
+    .main-header {
+        padding: 0.5rem 1rem;
+    }
+
+    .main-header>div {
+        width: auto;
+    }
+
+    .main-header__brand {
+        width: 30px;
+        height: 30px;
+        font-size: 1.3rem;
+
+    }
+
+    .main-header__brand img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-nav {
+        display: inline-block;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    /* main footer */
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
 }
