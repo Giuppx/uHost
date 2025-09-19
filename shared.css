@@ -11,6 +11,12 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+main {
+    /* 100vh - navbar and footer height (height += padding, border and margin) */
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     display: none;
     position: fixed;
