@@ -26,17 +26,11 @@ main {
     outline: none;
 }
 
-.signup-form input:not([type="checkbox"]),
+.signup-form input,
 .signup-form select {
     padding: 0.2rem 0.5rem;
     border: 1px solid #ccc;
     font-family: inherit;
-}
-
-.signup-form input:not([type="checkbox"]):focus,
-.signup-form select:focus {
-    border-color: #0e4f1f;
-    background-color: #d0f8d7;
 }
 
 .signup-form input[id*="terms"],
@@ -47,17 +41,22 @@ main {
 }
 
 .signup-form input[type="checkbox"] {
-
     background: transparent;
     border: 1px solid black;
     width: 1rem;
     height: 1rem;
+    padding: 0;
     vertical-align: middle;
     /* override browsers behavior */
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
 
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+    border-color: #0e4f1f;
+    background-color: #d0f8d7;
 }
 
 .signup-form input[type="checkbox"]:checked {
@@ -74,6 +73,26 @@ main {
     margin-top: 1rem;
 }
 
+/* form validation  */
+
+/*
+handel to pseudoclass
+
+ .signup-form input:invalid {
+    border-color: #ff0000;
+    background: salmon;
+} 
+
+*/
+
+/* handel to javascript */
+.invalid-input {
+    border-color: #ff0000 !important;
+    background: salmon;
+}
+
+
+/* media query  */
 
 @media (min-width: 40rem) {
     .signup-form {
