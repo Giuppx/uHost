@@ -29,6 +29,9 @@ main {
 }
 
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,17 +41,19 @@ main {
     z-index: 1;
 }
 
-/* use  > combinator  */
 .main-header>div {
-    display: inline-block;
-    vertical-align: middle;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+
 }
 
 .toggle-button {
     width: 3rem;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 1rem;
     background: transparent;
     border: none;
     vertical-align: middle;
@@ -66,10 +71,6 @@ main {
 }
 
 .main-header__brand {
-    /* change behavior for the icon  */
-    display: inline-block;
-    width: calc(100% - 5rem);
-    height: 2.5rem;
     /* text in alt attribute */
     color: #0e4f1f;
     font-weight: bold;
@@ -79,32 +80,12 @@ main {
 }
 
 .main-header__brand img {
-    /* using dimentions of container inline-block */
-    height: 100%;
-    width: 2rem;
+    height: 2.5rem;
     vertical-align: middle;
 }
 
 .main-nav {
     display: none;
-    /* Subtract the empty space and the width of the div element 
-    from the total width of the nav element to position the nav 
-    element on the same line of div */
-    width: calc(100% - 44px);
-    text-align: right;
-    vertical-align: middle;
-
-}
-
-.main__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main__item {
-    display: inline-block;
-    margin: 0 1rem;
 }
 
 .main__item>a,
@@ -146,13 +127,16 @@ main {
 
 .main-footer__links {
     list-style: none;
-    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-footer__link {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .main-footer__link a {
@@ -184,9 +168,13 @@ main {
     list-style: none;
     width: 90%;
     height: 100%;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .mobile-nav__item {
@@ -231,19 +219,24 @@ main {
 
     .main-header>div {
         width: auto;
+        display: block;
     }
 
-    .main-header__brand {
-        height: 2.5rem;
-
-    }
-
-    .main-header__brand img {
-        height: 100%;
-    }
 
     .main-nav {
-        display: inline-block;
+        display: flex;
+        text-align: right;
+    }
+
+    .main__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .main__item {
+        margin: 0 1rem;
     }
 
     .toggle-button {
@@ -251,6 +244,11 @@ main {
     }
 
     /* main footer */
+
+    .main-footer__links {
+        flex-direction: row;
+
+    }
 
     .main-footer__link {
         display: inline-block;
