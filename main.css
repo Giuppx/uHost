@@ -1,3 +1,8 @@
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
 #product-overview {
     position: relative;
     background: url("freedom.jpg") center left 28%/cover no-repeat border-box;
@@ -24,18 +29,17 @@
     font-size: 1.3rem;
 }
 
-.section-title {
-    color: #2ddf5c;
-    text-align: center;
-}
 
 .plan__list {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .plan {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     margin: 1rem 0;
     background-color: #d5ffd5;
@@ -49,6 +53,9 @@
 }
 
 .plan__annotation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 0.5rem;
     color: #0e9a43;
     border-radius: 8px;
@@ -77,17 +84,19 @@
 .plan__features {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-/* 
-.plan__features li {
-    margin: 8px 0;
-} 
-*/
 
 .plan__feature {
     margin: 0.5rem 0;
+}
+
+.plan>div {
+    padding: 1rem;
 }
 
 /*  key features */
@@ -106,7 +115,6 @@
 
 .key-features__list {
     width: 100%;
-    text-align: center;
     margin: 0 auto;
     list-style: none;
     padding: 0;
@@ -115,15 +123,17 @@
 .key-feature {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
     vertical-align: top;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .key-feature__img {
     width: 128px;
     height: 128px;
-    margin: 0 auto;
     background: #ffcecd;
     border: 2px solid #424242;
     border-radius: 50%;
@@ -208,14 +218,20 @@
 
     /* plan */
 
+    .plan__list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .plan {
-        display: inline-block;
-        vertical-align: middle;
         width: 30%;
+        height: 32rem;
         max-width: 25rem;
         min-width: 12rem;
         border-radius: calc(8px + 0.5rem);
         font-size: 1rem;
+        text-align: center;
     }
 
     .plan__annotation {
@@ -223,6 +239,8 @@
     }
 
     .plan--highlighted {
+        height: 34rem;
+        z-index: 1;
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
 
@@ -232,8 +250,14 @@
         margin-bottom: 4rem;
     }
 
+    .key-features__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .key-feature {
-        display: inline-block;
         width: 30%;
     }
 
