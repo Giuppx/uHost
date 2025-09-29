@@ -38,7 +38,7 @@ main {
     width: 100%;
     padding: 0.5rem 0.2rem;
     background: #2ddf5c;
-    z-index: 1;
+    z-index: 99;
 }
 
 .main-header>div {
