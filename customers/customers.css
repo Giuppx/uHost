@@ -79,6 +79,9 @@ main {
     }
 
     .testimonial {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         font-size: 1.2rem;
         margin: 3rem auto;
         max-width: 1500px;
@@ -89,7 +92,6 @@ main {
     }
 
     .testimonial__image-container {
-        display: inline-block;
         width: 65%;
         max-width: 580px;
         min-width: 350px;
@@ -99,8 +101,6 @@ main {
 
     .testimonial__info {
         width: 30%;
-        display: inline-block;
-        vertical-align: middle;
     }
 
     .testimonial__subtitle {
