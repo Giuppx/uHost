@@ -153,9 +153,9 @@
 .modal {
     display: none;
     position: fixed;
-    top: 35%;
-    left: 2%;
+    bottom: 0;
     padding: 1rem;
+    width: 100vw;
     border: 1px solid #ccc;
     border-radius: 10px;
     background: white;
@@ -265,7 +265,10 @@
     /* modal */
 
     .modal {
-        left: 35%;
+        top: 50vh;
+        bottom: unset;
+        left: 35vw;
+        width: auto;
     }
 
     .modal__title {
