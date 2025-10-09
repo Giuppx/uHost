@@ -21,6 +21,7 @@ main {
     margin: 1rem 0;
     border: 4px solid #0e4f1f;
     border-left: none;
+    overflow: hidden;
 }
 
 .pakage:hover,
@@ -56,10 +57,16 @@ main {
     top: 0;
     right: 0;
     padding: 0.5rem;
-    margin: 1.2rem;
+    /* margin: 1.2rem; */
     background: #ff5454;
     font-size: 0.8rem;
     color: white;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    /* center => default value */
+    transform-origin: center;
+
+    width: 12rem;
+    text-align: center;
 }
 
 .clearfix {
