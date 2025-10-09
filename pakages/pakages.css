@@ -61,7 +61,7 @@ main {
     background: #ff5454;
     font-size: 0.8rem;
     color: white;
-    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform: rotateZ(34deg) translateX(2.8rem) translateY(-1rem);
     /* center => default value */
     transform-origin: center;
 
@@ -114,6 +114,10 @@ main {
 
     .pakage {
         border-left: 4px solid #0e4f1f;
+    }
+
+    .pakage__badge {
+        transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
     }
 
     #free {
