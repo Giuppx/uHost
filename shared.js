@@ -39,12 +39,19 @@ backdrop.addEventListener('click', () => {
     if (modal) {
         modal.classList.remove('open');
     }
-    mobileNav.classList.remove('open');
+
+    if (isOpen) {
+        isOpen = false;
+        mobileNav.classList.remove('open');
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 1000)
+
+    }
     backdrop.classList.remove('open');
     setTimeout(() => {
         backdrop.style.display = 'none';
     }, 10)
-
 
 })
 
@@ -52,10 +59,16 @@ backdrop.addEventListener('click', () => {
 
 const toggle = document.getElementsByClassName('toggle-button')[0];
 const mobileNav = document.getElementsByClassName('mobile-nav')[0];
+let isOpen = false;
 
 toggle.addEventListener('click', () => {
-    mobileNav.classList.add('open');
-    backdrop.classList.add('open');
+    isOpen = true;
+    mobileNav.style.display = 'block';
+    backdrop.style.display = 'block';
+    setTimeout(() => {
+        mobileNav.classList.add('open');
+        backdrop.classList.add('open');
 
+    }, 10);
 })
 
