@@ -12,8 +12,11 @@ for (let i = 0; i < chosePalnBtns.length; i++) {
         // backdrop.style.display = 'block';
         // modal.style.display = 'block';
         // modal.class = 'open';  overwrite all class list
+        backdrop.style.display = 'block';
         modal.classList.add('open');
-        backdrop.classList.add('open');
+        setTimeout(() => {
+            backdrop.classList.add('open');
+        }, 10)
     })
 
 }
@@ -25,6 +28,9 @@ if (modal) {
         // modal.style.display = 'none';
         modal.classList.remove('open');
         backdrop.classList.remove('open');
+        setTimeout(() => {
+            backdrop.style.display = 'none';
+        }, 10)
     })
 
 }
@@ -35,6 +41,9 @@ backdrop.addEventListener('click', () => {
     }
     mobileNav.classList.remove('open');
     backdrop.classList.remove('open');
+    setTimeout(() => {
+        backdrop.style.display = 'none';
+    }, 10)
 
 
 })
