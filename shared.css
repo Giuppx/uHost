@@ -112,6 +112,10 @@ main {
     border-radius: 8px;
 }
 
+.main__item.main__item--cta {
+    animation: wiggle 2s 1s ease-in-out infinite alternate;
+}
+
 .main__item--cta a:hover,
 .main__item--cta a:active,
 .mobile-nav__item--cta a:hover,
@@ -215,6 +219,31 @@ main {
 .button:active {
     background-color: white;
     color: #0e4f1f;
+}
+
+
+@keyframes wiggle {
+    /* from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+    } */
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+
+
 }
 
 
