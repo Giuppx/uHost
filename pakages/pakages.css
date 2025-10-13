@@ -24,6 +24,15 @@ main {
     overflow: hidden;
 }
 
+.pakage:hover {
+    animation: hover-pakage 0.400s ease-out forwards;
+
+}
+
+.pakage#free:hover {
+    animation: hover-pakage-free 0.400s ease-out forwards;
+}
+
 .pakage:hover,
 .pakage:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -102,6 +111,26 @@ main {
 
 #premium .pakage__subtitle {
     color: #bbb;
+}
+
+@keyframes hover-pakage {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(2%);
+    }
+}
+
+@keyframes hover-pakage-free {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-2%);
+    }
 }
 
 @media (min-width: 40rem) {
